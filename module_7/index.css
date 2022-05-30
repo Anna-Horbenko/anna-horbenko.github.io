@@ -54,12 +54,28 @@ textarea {
   text-decoration: none;
   color: #5d5d5d;
   font-weight: bold;
+  position: relative;
+}
+
+.header-nav-list a::after {
+  display: block;
+  content: "";
+
+  height: 2px;
+  position: absolute;
+  background-color: #fed136;
+  width: 0;
+  transition: width 0.2s ease-in-out;
+}
+
+.header-nav-item a:hover::after {
+  display: block;
+  width: 100%;
 }
 
 .header-nav-item a:hover {
   color: #fed136;
   text-decoration: none;
-
   margin: 0;
 }
 
@@ -72,7 +88,6 @@ textarea {
   padding-bottom: 23px;
   position: relative;
   margin: 0 auto;
-  font-weight: bold;
 }
 
 .title2 {
@@ -225,4 +240,8 @@ textarea {
   font-weight: bold;
   color: #bbbbbb;
   margin-left: 30px;
+}
+
+.title1 {
+  font-family: "Montserrat", sans-serif;
 }
