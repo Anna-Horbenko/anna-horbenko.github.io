@@ -120,7 +120,6 @@ header {
   text-align: center;
   width: 227px;
   font-weight: 400;
-  font-size: 41px;
 }
 
 .title_sub {
@@ -258,6 +257,7 @@ header {
     width: 480px;
     margin-top: 226px;
     margin-bottom: 25px;
+    font-size: 41px;
   }
 
   .title_team {
